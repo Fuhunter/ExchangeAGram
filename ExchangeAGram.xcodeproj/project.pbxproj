@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		A54FDF5719F3DD3D00B79615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF5619F3DD3D00B79615 /* AppDelegate.swift */; };
 		A54FDF5A19F3DD3D00B79615 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF5819F3DD3D00B79615 /* ExchangeAGram.xcdatamodeld */; };
-		A54FDF5C19F3DD3D00B79615 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF5B19F3DD3D00B79615 /* ViewController.swift */; };
 		A54FDF5F19F3DD3D00B79615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54FDF5D19F3DD3D00B79615 /* Main.storyboard */; };
 		A54FDF6119F3DD3D00B79615 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54FDF6019F3DD3D00B79615 /* Images.xcassets */; };
 		A54FDF6419F3DD3D00B79615 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A54FDF6219F3DD3D00B79615 /* LaunchScreen.xib */; };
 		A54FDF7019F3DD3D00B79615 /* ExchangeAGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF6F19F3DD3D00B79615 /* ExchangeAGramTests.swift */; };
+		A54FDF7A19F3E48900B79615 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF7919F3E48900B79615 /* FeedViewController.swift */; };
+		A54FDF7C19F3EC4C00B79615 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF7B19F3EC4C00B79615 /* FeedCell.swift */; };
+		A54FDF7E19F3EDC600B79615 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		A54FDF5519F3DD3D00B79615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A54FDF5619F3DD3D00B79615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A54FDF5919F3DD3D00B79615 /* ExchangeAGram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeAGram.xcdatamodel; sourceTree = "<group>"; };
-		A54FDF5B19F3DD3D00B79615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A54FDF5E19F3DD3D00B79615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A54FDF6019F3DD3D00B79615 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A54FDF6319F3DD3D00B79615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A54FDF6919F3DD3D00B79615 /* ExchangeAGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54FDF6E19F3DD3D00B79615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A54FDF6F19F3DD3D00B79615 /* ExchangeAGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAGramTests.swift; sourceTree = "<group>"; };
+		A54FDF7919F3E48900B79615 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
+		A54FDF7B19F3EC4C00B79615 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A54FDF7E19F3EDC600B79615 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 		A54FDF4819F3DD3D00B79615 = {
 			isa = PBXGroup;
 			children = (
+				A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */,
 				A54FDF5319F3DD3D00B79615 /* ExchangeAGram */,
 				A54FDF6C19F3DD3D00B79615 /* ExchangeAGramTests */,
 				A54FDF5219F3DD3D00B79615 /* Products */,
@@ -80,7 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				A54FDF5619F3DD3D00B79615 /* AppDelegate.swift */,
-				A54FDF5B19F3DD3D00B79615 /* ViewController.swift */,
+				A54FDF7919F3E48900B79615 /* FeedViewController.swift */,
+				A54FDF7B19F3EC4C00B79615 /* FeedCell.swift */,
 				A54FDF5D19F3DD3D00B79615 /* Main.storyboard */,
 				A54FDF6019F3DD3D00B79615 /* Images.xcassets */,
 				A54FDF6219F3DD3D00B79615 /* LaunchScreen.xib */,
@@ -215,8 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A54FDF5C19F3DD3D00B79615 /* ViewController.swift in Sources */,
 				A54FDF5719F3DD3D00B79615 /* AppDelegate.swift in Sources */,
+				A54FDF7C19F3EC4C00B79615 /* FeedCell.swift in Sources */,
+				A54FDF7A19F3E48900B79615 /* FeedViewController.swift in Sources */,
 				A54FDF5A19F3DD3D00B79615 /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
