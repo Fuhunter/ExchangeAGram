@@ -18,6 +18,7 @@
 		A54FDF7E19F3EDC600B79615 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */; };
 		A59ED37A1A0E3E83005213BD /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59ED3791A0E3E83005213BD /* FeedItem.swift */; };
 		A59ED37C1A0E43AA005213BD /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59ED37B1A0E43AA005213BD /* FilterViewController.swift */; };
+		A59ED37E1A0E49D1005213BD /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59ED37D1A0E49D1005213BD /* FilterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A59ED3791A0E3E83005213BD /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		A59ED37B1A0E43AA005213BD /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		A59ED37D1A0E49D1005213BD /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				A54FDF7919F3E48900B79615 /* FeedViewController.swift */,
 				A59ED37B1A0E43AA005213BD /* FilterViewController.swift */,
 				A54FDF7B19F3EC4C00B79615 /* FeedCell.swift */,
+				A59ED37D1A0E49D1005213BD /* FilterCell.swift */,
 				A54FDF5D19F3DD3D00B79615 /* Main.storyboard */,
 				A54FDF6019F3DD3D00B79615 /* Images.xcassets */,
 				A54FDF6219F3DD3D00B79615 /* LaunchScreen.xib */,
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59ED37E1A0E49D1005213BD /* FilterCell.swift in Sources */,
 				A59ED37C1A0E43AA005213BD /* FilterViewController.swift in Sources */,
 				A54FDF5719F3DD3D00B79615 /* AppDelegate.swift in Sources */,
 				A54FDF7C19F3EC4C00B79615 /* FeedCell.swift in Sources */,
