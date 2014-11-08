@@ -59,7 +59,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2Lg-My-0Ds">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="oUw-0I-jo4"/>
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="oUw-0I-jo4">
+                            <connections>
+                                <action selector="profileTapped:" destination="BYZ-38-t0r" id="tN2-6Y-Tai"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="9BI-Nb-x8u">
                             <connections>
                                 <action selector="snapBarButtonTapped:" destination="BYZ-38-t0r" id="C3m-m7-323"/>

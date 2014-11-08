@@ -69,6 +69,9 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell
     }
 
+    @IBAction func profileTapped(sender: UIBarButtonItem) {
+        self.performSegueWithIdentifier("profileSegue", sender: nil)
+    }
     
     @IBAction func snapBarButtonTapped(sender: UIBarButtonItem) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {

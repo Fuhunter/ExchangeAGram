@@ -40,6 +40,9 @@ class ProfileViewController: UIViewController, FBLoginViewDelegate {
         
         let userImageURL = "https://graph.facebook.com/\(user.objectID)/picture?type=small"
         let url = NSURL(string: userImageURL)
+        let imageData = NSData(contentsOfURL: url!)
+        let image = UIImage(data: imageData!)
+        profileImageView.image = image
     }
     
     func loginViewShowingLoggedOutUser(loginView: FBLoginView!) {
