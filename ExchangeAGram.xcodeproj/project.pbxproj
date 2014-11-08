@@ -72,7 +72,6 @@
 		A54FDF4819F3DD3D00B79615 = {
 			isa = PBXGroup;
 			children = (
-				A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */,
 				A54FDF5319F3DD3D00B79615 /* ExchangeAGram */,
 				A54FDF6C19F3DD3D00B79615 /* ExchangeAGramTests */,
 				A54FDF5219F3DD3D00B79615 /* Products */,
@@ -99,8 +98,7 @@
 				A54FDF5D19F3DD3D00B79615 /* Main.storyboard */,
 				A54FDF6019F3DD3D00B79615 /* Images.xcassets */,
 				A54FDF6219F3DD3D00B79615 /* LaunchScreen.xib */,
-				A54FDF5819F3DD3D00B79615 /* ExchangeAGram.xcdatamodeld */,
-				A59ED37F1A0E582A005213BD /* FeedItem.swift */,
+				A58DCDC81A0E5DB600708AA3 /* Model */,
 				A54FDF5419F3DD3D00B79615 /* Supporting Files */,
 			);
 			path = ExchangeAGram;
@@ -109,6 +107,7 @@
 		A54FDF5419F3DD3D00B79615 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */,
 				A54FDF5519F3DD3D00B79615 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -129,6 +128,15 @@
 				A54FDF6E19F3DD3D00B79615 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A58DCDC81A0E5DB600708AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A54FDF5819F3DD3D00B79615 /* ExchangeAGram.xcdatamodeld */,
+				A59ED37F1A0E582A005213BD /* FeedItem.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
