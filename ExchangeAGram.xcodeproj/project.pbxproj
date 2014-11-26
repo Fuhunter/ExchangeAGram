@@ -103,7 +103,6 @@
 				A59ED37D1A0E49D1005213BD /* FilterCell.swift */,
 				A54FDF5D19F3DD3D00B79615 /* Main.storyboard */,
 				A58DCDC91A0E6A8900708AA3 /* ProfileViewController.swift */,
-				A509EA091A0E743F0083C1E8 /* Bridging-Header.h */,
 				A54FDF6019F3DD3D00B79615 /* Images.xcassets */,
 				A54FDF6219F3DD3D00B79615 /* LaunchScreen.xib */,
 				A58DCDC81A0E5DB600708AA3 /* Model */,
@@ -115,6 +114,7 @@
 		A54FDF5419F3DD3D00B79615 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A509EA091A0E743F0083C1E8 /* Bridging-Header.h */,
 				A58DCDCB1A0E6DFA00708AA3 /* FacebookSDK.framework */,
 				A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */,
 				A54FDF5519F3DD3D00B79615 /* Info.plist */,
