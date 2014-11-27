@@ -9,17 +9,30 @@
 import UIKit
 import MobileCoreServices
 import CoreData
+import MapKit
 
-class FeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class FeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     var feedArray:[AnyObject] = []
     
+    var locationManager:CLLocationManager!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backgroundImage = UIImage(named: "AutumnBackground")
+        self.view.backgroundColor = UIColor(patternImage: backgroundImage!)
 
         // Do any additional setup after loading the view.
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+        
+        locationManager.distanceFilter = 100.0
+        locationManager.startUpdatingLocation()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,18 +48,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         feedArray = context.executeFetchRequest(request, error: nil)!
         collectionView.reloadData()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
+        
     // UICollectionViewDataSource
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -63,7 +65,13 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         let thisItem = feedArray[indexPath.row] as FeedItem
         
-        cell.imageView.image = UIImage(data: thisItem.image)
+        if thisItem.filtered == true {
+            let returnedImage = UIImage(data: thisItem.image)!
+            let image = UIImage(CGImage: returnedImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Right)
+        } else {
+            cell.imageView.image = UIImage(data: thisItem.image)
+        }
+        
         cell.captionLabel.text = thisItem.caption
         
         return cell
@@ -119,6 +127,15 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         feedItem.caption = "test caption"
         feedItem.thumbNail = thumbNailData
         
+        feedItem.latitude = locationManager!.location.coordinate.latitude
+        feedItem.longitude = locationManager!.location.coordinate.longitude
+        
+        let UUID = NSUUID().UUIDString
+        
+        feedItem.uniqueID = UUID
+        
+        feedItem.filtered = false
+        
         (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
         
         feedArray.append(feedItem)
@@ -139,4 +156,10 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         self.navigationController?.pushViewController(filterVC, animated: false)
     }
     
+    
+    // CLLocationManagerDelegate
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        
+    }
 }
