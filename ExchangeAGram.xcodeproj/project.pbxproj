@@ -17,8 +17,9 @@
 		A54FDF7A19F3E48900B79615 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF7919F3E48900B79615 /* FeedViewController.swift */; };
 		A54FDF7C19F3EC4C00B79615 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54FDF7B19F3EC4C00B79615 /* FeedCell.swift */; };
 		A54FDF7E19F3EDC600B79615 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */; };
+		A58837541BDD0236000F9FA7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58837531BDD0236000F9FA7 /* FBSDKCoreKit.framework */; };
+		A58837561BDD024E000F9FA7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58837551BDD024E000F9FA7 /* FBSDKLoginKit.framework */; };
 		A58DCDCA1A0E6A8900708AA3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DCDC91A0E6A8900708AA3 /* ProfileViewController.swift */; };
-		A58DCDCC1A0E6DFA00708AA3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58DCDCB1A0E6DFA00708AA3 /* FacebookSDK.framework */; };
 		A59ED37C1A0E43AA005213BD /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59ED37B1A0E43AA005213BD /* FilterViewController.swift */; };
 		A59ED37E1A0E49D1005213BD /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59ED37D1A0E49D1005213BD /* FilterCell.swift */; };
 		A5BF1A681A265FE800E4D8AC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF1A671A265FE800E4D8AC /* MapViewController.swift */; };
@@ -51,8 +52,9 @@
 		A54FDF7919F3E48900B79615 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
 		A54FDF7B19F3EC4C00B79615 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A58837531BDD0236000F9FA7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A58837551BDD024E000F9FA7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A58DCDC91A0E6A8900708AA3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		A58DCDCB1A0E6DFA00708AA3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		A59ED37B1A0E43AA005213BD /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		A59ED37D1A0E49D1005213BD /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 		A5BF1A671A265FE800E4D8AC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -64,9 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58837541BDD0236000F9FA7 /* FBSDKCoreKit.framework in Frameworks */,
 				A5BF1A6A1A26616800E4D8AC /* MapKit.framework in Frameworks */,
+				A58837561BDD024E000F9FA7 /* FBSDKLoginKit.framework in Frameworks */,
 				A54FDF7E19F3EDC600B79615 /* MobileCoreServices.framework in Frameworks */,
-				A58DCDCC1A0E6DFA00708AA3 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +112,7 @@
 				A54FDF7B19F3EC4C00B79615 /* FeedCell.swift */,
 				A59ED37D1A0E49D1005213BD /* FilterCell.swift */,
 				A54FDF5D19F3DD3D00B79615 /* Main.storyboard */,
+				A509EA091A0E743F0083C1E8 /* Bridging-Header.h */,
 				A54FDF6019F3DD3D00B79615 /* Images.xcassets */,
 				A54FDF6219F3DD3D00B79615 /* LaunchScreen.xib */,
 				A58DCDC81A0E5DB600708AA3 /* Model */,
@@ -120,9 +124,9 @@
 		A54FDF5419F3DD3D00B79615 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A509EA091A0E743F0083C1E8 /* Bridging-Header.h */,
+				A58837551BDD024E000F9FA7 /* FBSDKLoginKit.framework */,
+				A58837531BDD0236000F9FA7 /* FBSDKCoreKit.framework */,
 				A5BF1A691A26616800E4D8AC /* MapKit.framework */,
-				A58DCDCB1A0E6DFA00708AA3 /* FacebookSDK.framework */,
 				A54FDF7D19F3EDC600B79615 /* MobileCoreServices.framework */,
 				A54FDF5519F3DD3D00B79615 /* Info.plist */,
 			);
@@ -199,11 +203,14 @@
 		A54FDF4919F3DD3D00B79615 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Niclas Günther";
 				TargetAttributes = {
 					A54FDF5019F3DD3D00B79615 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 97Q3RQDBUD;
 					};
 					A54FDF6819F3DD3D00B79615 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -325,6 +332,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -388,13 +396,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Niclas/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = ExchangeAGram/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.riseforward.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeAGram/Bridging-Header.h";
 			};
@@ -404,13 +414,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Niclas/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = ExchangeAGram/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.riseforward.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ExchangeAGram/Bridging-Header.h";
 			};
@@ -430,6 +442,7 @@
 				);
 				INFOPLIST_FILE = ExchangeAGramTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.riseforward.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeAGram.app/ExchangeAGram";
 			};
@@ -445,6 +458,7 @@
 				);
 				INFOPLIST_FILE = ExchangeAGramTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.riseforward.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeAGram.app/ExchangeAGram";
 			};

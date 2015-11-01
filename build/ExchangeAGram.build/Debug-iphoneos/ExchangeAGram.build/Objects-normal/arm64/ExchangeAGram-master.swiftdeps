@@ -1,0 +1,12 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "c7ad2bdf91e2bdab067153357164e915"
+build_time: [499181007, 458381000]
+inputs:
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/FilterViewController.swift": [499094717, 0]
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/MapViewController.swift": [499094771, 0]
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/FeedCell.swift": [467038918, 0]
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/ProfileViewController.swift": [499098212, 0]
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/FeedItem.swift": [470357370, 0]
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/FilterCell.swift": [499083779, 0]
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/FeedViewController.swift": [499094695, 0]
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/AppDelegate.swift": [499094675, 0]

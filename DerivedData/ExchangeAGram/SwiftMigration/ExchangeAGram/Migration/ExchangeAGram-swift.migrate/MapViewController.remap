@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/MapViewController.swift",
+  "offset": 573,
+  "remove": 195,
+  "text": "! AppDelegate)\n        let context:NSManagedObjectContext = appDelegate.managedObjectContext!\n        var error:NSError?\n        let itemArray: [AnyObject]?\n        do {\n            itemArray = try context.executeFetchRequest(request)\n        } catch var error1 as NSError {\n            error = error1\n            itemArray = nil\n        }",
+ }
+]

@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "f72af1c8a7fb679847bb66df79674090"
+build_time: [499083683, 543092000]
+inputs:
+  "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGramTests/ExchangeAGramTests.swift": [467034685, 0]

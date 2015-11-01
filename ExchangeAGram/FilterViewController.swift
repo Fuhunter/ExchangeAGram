@@ -57,7 +57,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell:FilterCell = collectionView.dequeueReusableCellWithReuseIdentifier("MyCell", forIndexPath: indexPath) as FilterCell
+        let cell:FilterCell = collectionView.dequeueReusableCellWithReuseIdentifier("MyCell", forIndexPath: indexPath) as! FilterCell
         
         cell.imageView.image = placeHolderImage
         
@@ -94,37 +94,37 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         let monochrome = CIFilter(name: "CIColorMonochrome")
         
         let colorControls = CIFilter(name: "CIColorControls")
-        colorControls.setValue(0.5, forKey: kCIInputSaturationKey)
+        colorControls!.setValue(0.5, forKey: kCIInputSaturationKey)
         
         let sepia = CIFilter(name: "CISepiaTone")
-        sepia.setValue(kIntensity, forKey: kCIInputIntensityKey)
+        sepia!.setValue(kIntensity, forKey: kCIInputIntensityKey)
         
         let colorClamp = CIFilter(name: "CIColorClamp")
-        colorClamp.setValue(CIVector(x: 0.9, y: 0.9, z: 0.9, w: 0.9), forKey: "inputMaxComponents")
-        colorClamp.setValue(CIVector(x: 0.2, y: 0.2, z: 0.2, w: 0.2), forKey: "inputMinComponents")
+        colorClamp!.setValue(CIVector(x: 0.9, y: 0.9, z: 0.9, w: 0.9), forKey: "inputMaxComponents")
+        colorClamp!.setValue(CIVector(x: 0.2, y: 0.2, z: 0.2, w: 0.2), forKey: "inputMinComponents")
         
         let composite = CIFilter(name: "CIHardLightBlendMode")
-        composite.setValue(sepia.outputImage, forKey: kCIInputImageKey)
+        composite!.setValue(sepia!.outputImage, forKey: kCIInputImageKey)
         
         let vignette = CIFilter(name: "CIVignette")
-        vignette.setValue(composite.outputImage, forKey: kCIInputImageKey)
-        vignette.setValue(kIntensity * 2, forKey: kCIInputIntensityKey)
-        vignette.setValue(kIntensity * 30, forKey: kCIInputRadiusKey)
+        vignette!.setValue(composite!.outputImage, forKey: kCIInputImageKey)
+        vignette!.setValue(kIntensity * 2, forKey: kCIInputIntensityKey)
+        vignette!.setValue(kIntensity * 30, forKey: kCIInputRadiusKey)
         
-        return [blur, instant, noir, transfer, unsharpen, monochrome, colorControls, sepia, colorClamp, composite, vignette]
+        return [blur!, instant!, noir!, transfer!, unsharpen!, monochrome!, colorControls!, sepia!, colorClamp!, composite!, vignette!]
     }
     
     func filteredImageFromImage (imageData: NSData, filter: CIFilter) -> UIImage {
         
         let unfilteredImage = CIImage(data: imageData)
         filter.setValue(unfilteredImage, forKey: kCIInputImageKey)
-        let filteredImage:CIImage = filter.outputImage
+        let filteredImage:CIImage = filter.outputImage!
         
-        let extent = filteredImage.extent()
+        let extent = filteredImage.extent
         let cgImage:CGImageRef = context.createCGImage(filteredImage, fromRect: extent)
         let finalImage = UIImage(CGImage: cgImage)
         
-        return finalImage!
+        return finalImage
     }
     
     // UIAlertController Helper Functions
@@ -142,22 +142,22 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         let textField = alert.textFields![0] as UITextField
         
         if textField.text != nil {
-            text = textField.text
+            text = textField.text!
         }
         
         let photoAction = UIAlertAction(title: "Post Photo to Facebook with Caption", style: UIAlertActionStyle.Destructive) { (UIAlertAction) -> Void in
             
             self.shareToFacebook(indexPath)
-            var text = textField.text
-            self.saveFilterToCoreData(indexPath, caption: text)
+            let text = textField.text
+            self.saveFilterToCoreData(indexPath, caption: text!)
         }
         
         alert.addAction(photoAction)
         
         let saveFilterAction = UIAlertAction(title: "Save Filter without posting on Facebook", style: UIAlertActionStyle.Default) { (UIAlertAction) -> Void in
             
-            var text = textField.text
-            self.saveFilterToCoreData(indexPath, caption: text)
+            let text = textField.text
+            self.saveFilterToCoreData(indexPath, caption: text!)
         }
         
         alert.addAction(saveFilterAction)
@@ -176,17 +176,17 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         let imageData = UIImageJPEGRepresentation(filterImage, 1.0)
         
-        self.thisFeedItem.image = imageData
+        self.thisFeedItem.image = imageData!
         
         let thumbNailData = UIImageJPEGRepresentation(filterImage, 0.1)
         
-        self.thisFeedItem.thumbNail = thumbNailData
+        self.thisFeedItem.thumbNail = thumbNailData!
         
         self.thisFeedItem.caption = caption
         
         self.thisFeedItem.filtered = true
         
-        (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
+        (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
         
         self.navigationController?.popViewControllerAnimated(true)
     }
@@ -195,41 +195,41 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
         
         let photos:NSArray = [filterImage]
-        var params = FBPhotoParams()
+        /*var params = FBPhotoParams()
         params.photos = photos
         
         FBDialogs.presentMessageDialogWithPhotoParams(params, clientState: nil) { (call, result, error) -> Void in
             
-        }
+        }*/
     }
     
     // caching functions
     
     func cacheImage(imageNumber: Int) {
         let fileName = "\(thisFeedItem.uniqueID)\(imageNumber)"
-        let uniquePath = tmp.stringByAppendingPathComponent(fileName)
+        let uniquePath = (tmp as NSString).stringByAppendingPathComponent(fileName)
         
         if !NSFileManager.defaultManager().fileExistsAtPath(fileName) {
             let data = self.thisFeedItem.thumbNail
             let filter = self.filters[imageNumber]
             let image = filteredImageFromImage(data, filter: filter)
-            UIImageJPEGRepresentation(image, 1.0).writeToFile(uniquePath, atomically: true)
+            UIImageJPEGRepresentation(image, 1.0)!.writeToFile(uniquePath, atomically: true)
         }
     }
     
     func getCachedImage(imageNumber:Int) -> UIImage {
         let fileName = "\(thisFeedItem.uniqueID)\(imageNumber)"
-        let uniquePath = tmp.stringByAppendingPathComponent(fileName)
+        let uniquePath = (tmp as NSString).stringByAppendingPathComponent(fileName)
         
         var image:UIImage
         
         if NSFileManager.defaultManager().fileExistsAtPath(uniquePath) {
-             var returnedImage = UIImage(contentsOfFile: uniquePath)!
-            image = UIImage(CGImage: returnedImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Right)!
+             let returnedImage = UIImage(contentsOfFile: uniquePath)!
+            image = UIImage(CGImage: returnedImage.CGImage!, scale: 1.0, orientation: UIImageOrientation.Right)
         } else {
             self.cacheImage(imageNumber)
-            var returnedImage = UIImage(contentsOfFile: uniquePath)!
-            image = UIImage(CGImage: returnedImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Right)!
+            let returnedImage = UIImage(contentsOfFile: uniquePath)!
+            image = UIImage(CGImage: returnedImage.CGImage!, scale: 1.0, orientation: UIImageOrientation.Right)
         }
         
         return image

@@ -1,0 +1,578 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ProfileViewController"
+provides-nominal:
+- "C13ExchangeAGram21ProfileViewController"
+provides-member:
+- ["C13ExchangeAGram21ProfileViewController", ""]
+provides-dynamic-lookup:
+- "fbLoginView"
+- "mapViewButtonTapped"
+- "profileImageView"
+- "loginViewShowingLoggedInUser"
+- "loginViewShowingLoggedOutUser"
+- "loginView"
+- "didReceiveMemoryWarning"
+- "loginViewFetchedUserInfo"
+- "viewDidLoad"
+- "nameLabel"
+depends-top-level:
+- !private "StringLiteralType"
+- "ProfileViewController"
+- !private "Array"
+- "FBSDKLoginManager"
+- "UIButton"
+- "UILabel"
+- "FBSDKProfile"
+- "UIImageView"
+- "UIViewController"
+- !private "print"
+- "FBSDKLoginButton"
+- !private "BooleanLiteralType"
+- "NSError"
+depends-member:
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "fbLoginView"]
+- !private ["PSs9AnyObject", "hidden"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "localizedDescription"]
+- ["PSs9AnyObject", "loginView"]
+- ["PSs9AnyObject", "loginViewFetchedUserInfo"]
+- ["PSs9AnyObject", "loginViewShowingLoggedInUser"]
+- ["PSs9AnyObject", "loginViewShowingLoggedOutUser"]
+- ["PSs9AnyObject", "mapViewButtonTapped"]
+- !private ["PSs9AnyObject", "name"]
+- ["PSs9AnyObject", "nameLabel"]
+- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
+- !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", "profileImageView"]
+- !private ["PSs9AnyObject", "readPermissions"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["Sb", "deinit"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "fbLoginView"]
+- !private ["PSs11CVarArgType", "hidden"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "localizedDescription"]
+- ["PSs11CVarArgType", "loginView"]
+- ["PSs11CVarArgType", "loginViewFetchedUserInfo"]
+- ["PSs11CVarArgType", "loginViewShowingLoggedInUser"]
+- ["PSs11CVarArgType", "loginViewShowingLoggedOutUser"]
+- ["PSs11CVarArgType", "mapViewButtonTapped"]
+- !private ["PSs11CVarArgType", "name"]
+- ["PSs11CVarArgType", "nameLabel"]
+- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
+- !private ["PSs11CVarArgType", "print"]
+- ["PSs11CVarArgType", "profileImageView"]
+- !private ["PSs11CVarArgType", "readPermissions"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "fbLoginView"]
+- !private ["PSs23CustomStringConvertible", "hidden"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- ["PSs23CustomStringConvertible", "loginView"]
+- ["PSs23CustomStringConvertible", "loginViewFetchedUserInfo"]
+- ["PSs23CustomStringConvertible", "loginViewShowingLoggedInUser"]
+- ["PSs23CustomStringConvertible", "loginViewShowingLoggedOutUser"]
+- ["PSs23CustomStringConvertible", "mapViewButtonTapped"]
+- !private ["PSs23CustomStringConvertible", "name"]
+- ["PSs23CustomStringConvertible", "nameLabel"]
+- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- ["PSs23CustomStringConvertible", "profileImageView"]
+- !private ["PSs23CustomStringConvertible", "readPermissions"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "fbLoginView"]
+- !private ["PSs9Equatable", "hidden"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "localizedDescription"]
+- ["PSs9Equatable", "loginView"]
+- ["PSs9Equatable", "loginViewFetchedUserInfo"]
+- ["PSs9Equatable", "loginViewShowingLoggedInUser"]
+- ["PSs9Equatable", "loginViewShowingLoggedOutUser"]
+- ["PSs9Equatable", "mapViewButtonTapped"]
+- !private ["PSs9Equatable", "name"]
+- ["PSs9Equatable", "nameLabel"]
+- !private ["PSs9Equatable", "performSegueWithIdentifier"]
+- !private ["PSs9Equatable", "print"]
+- ["PSs9Equatable", "profileImageView"]
+- !private ["PSs9Equatable", "readPermissions"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "localizedDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo11FBSDKButton", "readPermissions"]
+- !private ["CSo16FBSDKLoginButton", "readPermissions"]
+- !private ["CSo12FBSDKProfile", "name"]
+- !private ["Sf", "deinit"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "fbLoginView"]
+- !private ["PSs8Hashable", "hidden"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "localizedDescription"]
+- ["PSs8Hashable", "loginView"]
+- ["PSs8Hashable", "loginViewFetchedUserInfo"]
+- ["PSs8Hashable", "loginViewShowingLoggedInUser"]
+- ["PSs8Hashable", "loginViewShowingLoggedOutUser"]
+- ["PSs8Hashable", "mapViewButtonTapped"]
+- !private ["PSs8Hashable", "name"]
+- ["PSs8Hashable", "nameLabel"]
+- !private ["PSs8Hashable", "performSegueWithIdentifier"]
+- !private ["PSs8Hashable", "print"]
+- ["PSs8Hashable", "profileImageView"]
+- !private ["PSs8Hashable", "readPermissions"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableSliceable", "Element"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "fbLoginView"]
+- !private ["PSo8NSCoding", "hidden"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
+- ["PSo8NSCoding", "loginView"]
+- ["PSo8NSCoding", "loginViewFetchedUserInfo"]
+- ["PSo8NSCoding", "loginViewShowingLoggedInUser"]
+- ["PSo8NSCoding", "loginViewShowingLoggedOutUser"]
+- ["PSo8NSCoding", "mapViewButtonTapped"]
+- !private ["PSo8NSCoding", "name"]
+- ["PSo8NSCoding", "nameLabel"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "profileImageView"]
+- !private ["PSo8NSCoding", "readPermissions"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["PSo9NSCopying", "name"]
+- !private ["CSo7NSError", "localizedDescription"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "fbLoginView"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "loginView"]
+- ["PSo26NSExtensionRequestHandling", "loginViewFetchedUserInfo"]
+- ["PSo26NSExtensionRequestHandling", "loginViewShowingLoggedInUser"]
+- ["PSo26NSExtensionRequestHandling", "loginViewShowingLoggedOutUser"]
+- ["PSo26NSExtensionRequestHandling", "mapViewButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "nameLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "profileImageView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "FBSDKLoginButton"]
+- ["CSo8NSObject", "FBSDKLoginManager"]
+- ["CSo8NSObject", "FBSDKProfile"]
+- ["CSo8NSObject", "NSError"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "fbLoginView"]
+- !private ["CSo8NSObject", "hidden"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "localizedDescription"]
+- ["CSo8NSObject", "loginView"]
+- ["CSo8NSObject", "loginViewFetchedUserInfo"]
+- ["CSo8NSObject", "loginViewShowingLoggedInUser"]
+- ["CSo8NSObject", "loginViewShowingLoggedOutUser"]
+- ["CSo8NSObject", "mapViewButtonTapped"]
+- !private ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "nameLabel"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "profileImageView"]
+- !private ["CSo8NSObject", "readPermissions"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "fbLoginView"]
+- !private ["PSo16NSObjectProtocol", "hidden"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- ["PSo16NSObjectProtocol", "loginView"]
+- ["PSo16NSObjectProtocol", "loginViewFetchedUserInfo"]
+- ["PSo16NSObjectProtocol", "loginViewShowingLoggedInUser"]
+- ["PSo16NSObjectProtocol", "loginViewShowingLoggedOutUser"]
+- ["PSo16NSObjectProtocol", "mapViewButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "nameLabel"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "profileImageView"]
+- !private ["PSo16NSObjectProtocol", "readPermissions"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["PSo14NSSecureCoding", "name"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["PSs16OutputStreamType", "init"]
+- ["C13ExchangeAGram21ProfileViewController", "FBSDKLoginButton"]
+- ["C13ExchangeAGram21ProfileViewController", "FBSDKLoginManager"]
+- ["C13ExchangeAGram21ProfileViewController", "FBSDKProfile"]
+- ["C13ExchangeAGram21ProfileViewController", "NSError"]
+- ["C13ExchangeAGram21ProfileViewController", "UIButton"]
+- ["C13ExchangeAGram21ProfileViewController", "UIImageView"]
+- ["C13ExchangeAGram21ProfileViewController", "UILabel"]
+- ["C13ExchangeAGram21ProfileViewController", "deinit"]
+- ["C13ExchangeAGram21ProfileViewController", "didReceiveMemoryWarning"]
+- ["C13ExchangeAGram21ProfileViewController", "fbLoginView"]
+- ["C13ExchangeAGram21ProfileViewController", "init"]
+- ["C13ExchangeAGram21ProfileViewController", "loginView"]
+- ["C13ExchangeAGram21ProfileViewController", "loginViewFetchedUserInfo"]
+- ["C13ExchangeAGram21ProfileViewController", "loginViewShowingLoggedInUser"]
+- ["C13ExchangeAGram21ProfileViewController", "loginViewShowingLoggedOutUser"]
+- ["C13ExchangeAGram21ProfileViewController", "mapViewButtonTapped"]
+- ["C13ExchangeAGram21ProfileViewController", "nameLabel"]
+- !private ["C13ExchangeAGram21ProfileViewController", "performSegueWithIdentifier"]
+- !private ["C13ExchangeAGram21ProfileViewController", "print"]
+- ["C13ExchangeAGram21ProfileViewController", "profileImageView"]
+- ["C13ExchangeAGram21ProfileViewController", "viewDidLoad"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs10Streamable", "init"]
+- !private ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "hidden"]
+- !private ["PSo29UIAccessibilityIdentification", "readPermissions"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "hidden"]
+- !private ["PSo12UIAppearance", "readPermissions"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "fbLoginView"]
+- !private ["PSo21UIAppearanceContainer", "hidden"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "loginView"]
+- ["PSo21UIAppearanceContainer", "loginViewFetchedUserInfo"]
+- ["PSo21UIAppearanceContainer", "loginViewShowingLoggedInUser"]
+- ["PSo21UIAppearanceContainer", "loginViewShowingLoggedOutUser"]
+- ["PSo21UIAppearanceContainer", "mapViewButtonTapped"]
+- ["PSo21UIAppearanceContainer", "nameLabel"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "profileImageView"]
+- !private ["PSo21UIAppearanceContainer", "readPermissions"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "readPermissions"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "fbLoginView"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "loginView"]
+- ["PSo18UIContentContainer", "loginViewFetchedUserInfo"]
+- ["PSo18UIContentContainer", "loginViewShowingLoggedInUser"]
+- ["PSo18UIContentContainer", "loginViewShowingLoggedOutUser"]
+- ["PSo18UIContentContainer", "mapViewButtonTapped"]
+- ["PSo18UIContentContainer", "nameLabel"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "profileImageView"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "readPermissions"]
+- !private ["PSo17UICoordinateSpace", "hidden"]
+- !private ["PSo17UICoordinateSpace", "readPermissions"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "hidden"]
+- !private ["PSo13UIDynamicItem", "readPermissions"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "fbLoginView"]
+- !private ["PSo18UIFocusEnvironment", "hidden"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "loginView"]
+- ["PSo18UIFocusEnvironment", "loginViewFetchedUserInfo"]
+- ["PSo18UIFocusEnvironment", "loginViewShowingLoggedInUser"]
+- ["PSo18UIFocusEnvironment", "loginViewShowingLoggedOutUser"]
+- ["PSo18UIFocusEnvironment", "mapViewButtonTapped"]
+- ["PSo18UIFocusEnvironment", "nameLabel"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "profileImageView"]
+- !private ["PSo18UIFocusEnvironment", "readPermissions"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIImageView", "hidden"]
+- !private ["CSo7UILabel", "hidden"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "FBSDKLoginButton"]
+- ["CSo11UIResponder", "FBSDKLoginManager"]
+- ["CSo11UIResponder", "FBSDKProfile"]
+- ["CSo11UIResponder", "NSError"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "fbLoginView"]
+- !private ["CSo11UIResponder", "hidden"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "loginView"]
+- ["CSo11UIResponder", "loginViewFetchedUserInfo"]
+- ["CSo11UIResponder", "loginViewShowingLoggedInUser"]
+- ["CSo11UIResponder", "loginViewShowingLoggedOutUser"]
+- ["CSo11UIResponder", "mapViewButtonTapped"]
+- ["CSo11UIResponder", "nameLabel"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "profileImageView"]
+- !private ["CSo11UIResponder", "readPermissions"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "fbLoginView"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "loginView"]
+- ["PSo16UIStateRestoring", "loginViewFetchedUserInfo"]
+- ["PSo16UIStateRestoring", "loginViewShowingLoggedInUser"]
+- ["PSo16UIStateRestoring", "loginViewShowingLoggedOutUser"]
+- ["PSo16UIStateRestoring", "mapViewButtonTapped"]
+- ["PSo16UIStateRestoring", "nameLabel"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "profileImageView"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "fbLoginView"]
+- !private ["PSo18UITraitEnvironment", "hidden"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "loginView"]
+- ["PSo18UITraitEnvironment", "loginViewFetchedUserInfo"]
+- ["PSo18UITraitEnvironment", "loginViewShowingLoggedInUser"]
+- ["PSo18UITraitEnvironment", "loginViewShowingLoggedOutUser"]
+- ["PSo18UITraitEnvironment", "mapViewButtonTapped"]
+- ["PSo18UITraitEnvironment", "nameLabel"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "profileImageView"]
+- !private ["PSo18UITraitEnvironment", "readPermissions"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "hidden"]
+- !private ["CSo6UIView", "readPermissions"]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "FBSDKLoginButton"]
+- ["CSo16UIViewController", "FBSDKLoginManager"]
+- ["CSo16UIViewController", "FBSDKProfile"]
+- ["CSo16UIViewController", "NSError"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "fbLoginView"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "loginView"]
+- ["CSo16UIViewController", "loginViewFetchedUserInfo"]
+- ["CSo16UIViewController", "loginViewShowingLoggedInUser"]
+- ["CSo16UIViewController", "loginViewShowingLoggedOutUser"]
+- ["CSo16UIViewController", "mapViewButtonTapped"]
+- ["CSo16UIViewController", "nameLabel"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "profileImageView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "hidden"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "readPermissions"]
+- !private ["PSs12_Reflectable", "text"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "Sb"
+- "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo11FBSDKButton"
+- !private "CSo16FBSDKLoginButton"
+- !private "CSo12FBSDKProfile"
+- !private "Sf"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo7NSError"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "PSs16OutputStreamType"
+- "C13ExchangeAGram21ProfileViewController"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs12SequenceType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs10_ArrayType"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/Bridging-Header.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFURL.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFTask.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFDefines.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/Bolts.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Modules/module.modulemap"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+interface-hash: "a851432402fc2b30ec8516fc5e9e4001"

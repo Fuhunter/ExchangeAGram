@@ -1,0 +1,183 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FeedItem"
+provides-nominal:
+- "C13ExchangeAGram8FeedItem"
+provides-member:
+- ["C13ExchangeAGram8FeedItem", ""]
+provides-dynamic-lookup:
+- "uniqueID"
+- "latitude"
+- "thumbNail"
+- "caption"
+- "longitude"
+- "image"
+- "filtered"
+depends-top-level:
+- "NSManagedObject"
+- "NSNumber"
+- "NSData"
+- "FeedItem"
+- "String"
+depends-member:
+- ["PSs9AnyObject", "caption"]
+- ["PSs9AnyObject", "filtered"]
+- ["PSs9AnyObject", "image"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "latitude"]
+- ["PSs9AnyObject", "longitude"]
+- ["PSs9AnyObject", "thumbNail"]
+- ["PSs9AnyObject", "uniqueID"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "caption"]
+- ["PSs11CVarArgType", "filtered"]
+- ["PSs11CVarArgType", "image"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "latitude"]
+- ["PSs11CVarArgType", "longitude"]
+- ["PSs11CVarArgType", "thumbNail"]
+- ["PSs11CVarArgType", "uniqueID"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "caption"]
+- ["PSs23CustomStringConvertible", "filtered"]
+- ["PSs23CustomStringConvertible", "image"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "latitude"]
+- ["PSs23CustomStringConvertible", "longitude"]
+- ["PSs23CustomStringConvertible", "thumbNail"]
+- ["PSs23CustomStringConvertible", "uniqueID"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "caption"]
+- ["PSs9Equatable", "filtered"]
+- ["PSs9Equatable", "image"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "latitude"]
+- ["PSs9Equatable", "longitude"]
+- ["PSs9Equatable", "thumbNail"]
+- ["PSs9Equatable", "uniqueID"]
+- ["PSs9Equatable", ""]
+- ["C13ExchangeAGram8FeedItem", "NSData"]
+- ["C13ExchangeAGram8FeedItem", "NSNumber"]
+- ["C13ExchangeAGram8FeedItem", "String"]
+- ["C13ExchangeAGram8FeedItem", "caption"]
+- ["C13ExchangeAGram8FeedItem", "deinit"]
+- ["C13ExchangeAGram8FeedItem", "filtered"]
+- ["C13ExchangeAGram8FeedItem", "image"]
+- ["C13ExchangeAGram8FeedItem", "init"]
+- ["C13ExchangeAGram8FeedItem", "latitude"]
+- ["C13ExchangeAGram8FeedItem", "longitude"]
+- ["C13ExchangeAGram8FeedItem", "thumbNail"]
+- ["C13ExchangeAGram8FeedItem", "uniqueID"]
+- ["PSs8Hashable", "caption"]
+- ["PSs8Hashable", "filtered"]
+- ["PSs8Hashable", "image"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "latitude"]
+- ["PSs8Hashable", "longitude"]
+- ["PSs8Hashable", "thumbNail"]
+- ["PSs8Hashable", "uniqueID"]
+- ["PSs8Hashable", ""]
+- ["CSo15NSManagedObject", "NSData"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "caption"]
+- ["CSo15NSManagedObject", "filtered"]
+- ["CSo15NSManagedObject", "image"]
+- ["CSo15NSManagedObject", "init"]
+- ["CSo15NSManagedObject", "latitude"]
+- ["CSo15NSManagedObject", "longitude"]
+- ["CSo15NSManagedObject", "thumbNail"]
+- ["CSo15NSManagedObject", "uniqueID"]
+- ["CSo15NSManagedObject", ""]
+- ["CSo8NSObject", "NSData"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "caption"]
+- ["CSo8NSObject", "filtered"]
+- ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "latitude"]
+- ["CSo8NSObject", "longitude"]
+- ["CSo8NSObject", "thumbNail"]
+- ["CSo8NSObject", "uniqueID"]
+- ["PSo16NSObjectProtocol", "caption"]
+- ["PSo16NSObjectProtocol", "filtered"]
+- ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "latitude"]
+- ["PSo16NSObjectProtocol", "longitude"]
+- ["PSo16NSObjectProtocol", "thumbNail"]
+- ["PSo16NSObjectProtocol", "uniqueID"]
+- ["PSo16NSObjectProtocol", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "C13ExchangeAGram8FeedItem"
+- "PSs8Hashable"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/Niclas/Desktop/xcode_projekte/ExchangeAGram/ExchangeAGram/Bridging-Header.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFURL.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFTask.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFDefines.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Headers/Bolts.h"
+- "/Users/Niclas/Documents/FacebookSDK/Bolts.framework/Modules/module.modulemap"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/Niclas/Documents/FacebookSDK/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "76823e60c7d6ededf001ef81c0d45fac"

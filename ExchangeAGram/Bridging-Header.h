@@ -6,4 +6,5 @@
 //  Copyright (c) 2014 Niclas Günther. All rights reserved.
 //
 
-#import <FacebookSDK/FacebookSDK.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>

@@ -43,9 +43,9 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidAppear(animated: Bool) {
         
         let request = NSFetchRequest(entityName: "FeedItem")
-        let appDelegate:AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+        let appDelegate:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
         let context:NSManagedObjectContext = appDelegate.managedObjectContext!
-        feedArray = context.executeFetchRequest(request, error: nil)!
+        feedArray = try! context.executeFetchRequest(request)
         collectionView.reloadData()
     }
         
@@ -61,13 +61,13 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        var cell:FeedCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as FeedCell
+        let cell:FeedCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! FeedCell
         
-        let thisItem = feedArray[indexPath.row] as FeedItem
+        let thisItem = feedArray[indexPath.row] as! FeedItem
         
         if thisItem.filtered == true {
             let returnedImage = UIImage(data: thisItem.image)!
-            let image = UIImage(CGImage: returnedImage.CGImage, scale: 1.0, orientation: UIImageOrientation.Right)
+            _ = UIImage(CGImage: returnedImage.CGImage!, scale: 1.0, orientation: UIImageOrientation.Right)
         } else {
             cell.imageView.image = UIImage(data: thisItem.image)
         }
@@ -83,22 +83,22 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     @IBAction func snapBarButtonTapped(sender: UIBarButtonItem) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
-            var cameraController = UIImagePickerController()
+            let cameraController = UIImagePickerController()
             cameraController.delegate = self
             cameraController.sourceType = UIImagePickerControllerSourceType.Camera
             
-            let mediaTypes:[AnyObject] = [kUTTypeImage]
+            let mediaTypes:[String] = [kUTTypeImage as String]
             cameraController.mediaTypes = mediaTypes
             cameraController.allowsEditing = false
             
             self.presentViewController(cameraController, animated: true, completion: nil)
         }
         else if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
-            var photoLibraryController = UIImagePickerController()
+            let photoLibraryController = UIImagePickerController()
             photoLibraryController.delegate = self
             photoLibraryController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
             
-            let mediaTypes:[AnyObject] = [kUTTypeImage]
+            let mediaTypes:[String] = [kUTTypeImage as String]
             
             photoLibraryController.mediaTypes = mediaTypes
             photoLibraryController.allowsEditing = false
@@ -106,7 +106,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
             self.presentViewController(photoLibraryController, animated: true, completion: nil)
         }
         else {
-            var alertController = UIAlertController(title: "Alert", message: "You're Device doesn't support camera or PhotoLibrary", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Alert", message: "You're Device doesn't support camera or PhotoLibrary", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
         }
@@ -114,21 +114,21 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // UIImagePickerControllerDelegate
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
-        let image = info[UIImagePickerControllerOriginalImage] as UIImage
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         let imageData = UIImageJPEGRepresentation(image, 1.0)
         let thumbNailData = UIImageJPEGRepresentation(image, 0.1)
         
-        let mangedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+        let mangedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let entityDescription = NSEntityDescription.entityForName("FeedItem", inManagedObjectContext: mangedObjectContext!)
         let feedItem = FeedItem(entity: entityDescription!, insertIntoManagedObjectContext: mangedObjectContext!)
         
-        feedItem.image = imageData
+        feedItem.image = imageData!
         feedItem.caption = "test caption"
-        feedItem.thumbNail = thumbNailData
+        feedItem.thumbNail = thumbNailData!
         
-        feedItem.latitude = locationManager!.location.coordinate.latitude
-        feedItem.longitude = locationManager!.location.coordinate.longitude
+        feedItem.latitude = locationManager!.location!.coordinate.latitude
+        feedItem.longitude = locationManager!.location!.coordinate.longitude
         
         let UUID = NSUUID().UUIDString
         
@@ -136,7 +136,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         feedItem.filtered = false
         
-        (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
+        (UIApplication.sharedApplication().delegate as! AppDelegate).saveContext()
         
         feedArray.append(feedItem)
         
@@ -148,9 +148,9 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     // UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let thisItem = feedArray[indexPath.row] as FeedItem
+        let thisItem = feedArray[indexPath.row] as! FeedItem
         
-        var filterVC = FilterViewController()
+        let filterVC = FilterViewController()
         filterVC.thisFeedItem = thisItem
         
         self.navigationController?.pushViewController(filterVC, animated: false)
@@ -159,7 +159,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // CLLocationManagerDelegate
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
     }
 }
